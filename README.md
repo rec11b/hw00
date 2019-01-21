@@ -14,6 +14,8 @@ These introductory tasks are intended to prepare for Matlab coding exercises. Th
 
 4.  Consider how to simulate a different second-order differential equation, the inverted pendulum, theta'' - wn\*theta = 0, where wn is the natural frequency (omega-n) equal to 1. Describe the modifications needed to convert the ballode demo into an inverted pendulum simulation. (No need to perform the simulation, just describe how it would be done, in a few sentences.)
 
+Solution: replace this line (dydt = [y(2); (m\*g-b\*y(2))/m]; ) with dydt = [y(2); (w\*n\*y(2)];  
+
 5. Consider how to simulate a first-order differential equation, such as x-dot + 1x = 0, with initial condition x(0) = 1. Describe how the above ODE commands would have to be modified to solve this equation. (No need to perform the simulation.)
 
 6. Contribute to the hw00 repository by either filing or responding to an Issue. Ask a question about anything related to the assignment, or answer the question, or participate in a discussion in any way. Alternatively, try improving this `README.md` file or the `ballode.m` code, and filing a pull request.
